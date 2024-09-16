@@ -4,3 +4,4 @@ pyarrow==17.0.0
 PyYAML==6.0.2
 Requests==2.32.3
 tqdm==4.66.5
+pystyle
