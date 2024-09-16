@@ -129,6 +129,33 @@ python wp-checker.py path/to/your/file -v valid_file -i invalid_file -off offlin
 | `-f`, `--format`  | Output format for the report                 | csv         |
 | `-d`, `--delay`   | Delay between requests in seconds            | 0           |
 
+---
+
+## 📋 File Format
+
+For **wp-checker** to function correctly, the provided `.txt` file must follow the format below:
+
+```
+(url):(user):(password)
+```
+
+### Example Format:
+
+```
+http://example.com/wp-login.php:admin:password123
+https://anotherexample.com/wp-login.php:user:mysecurepassword
+```
+
+### Format Details:
+
+- **URL**: The WordPress site address you want to check, ending with `wp-login.php`.
+- **User**: The username for authentication on the WordPress site.
+- **Password**: The password associated with the username.
+
+Each line of the file should contain a set of credentials in the specified format, separated by colons (`:`). Ensure there are no extra spaces around the colons.
+
+---
+
 ## 📄 Credits
 
 - **Creator**: [lalaio1](https://github.com/lalaio1)
