@@ -1,6 +1,9 @@
 # 🛠️ wp-checker
 
 Welcome to the wp-checker! This tool is designed to efficiently verify WordPress credentials and provide detailed reports. 
+![9](./image/3c10f195.png)
+
+---
 
 ## 🌟 Features
 
