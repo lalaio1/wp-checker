@@ -13,8 +13,15 @@ Welcome to the wp-checker! This tool is designed to efficiently verify WordPress
 
 ## 📸 Screenshots
 
-![1](path/to/screenshot1.png)
-![2](path/to/screenshot2.png)
+---
+![1](./image/1.png)
+
+---
+![2](./image/2.png)
+
+
+--- 
+![3](./image/3.png)
 
 ## 📚 Installation
 
