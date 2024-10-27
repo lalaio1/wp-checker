@@ -1,0 +1,2 @@
+2024-10-26 22:52:47,980 - __main__ - WARNING - [api.py:92] - API_KEY não configurada. Usando chave gerada: OrW3b2iyvNOYI-GUDe_D2xBX4Ne2LVtbFhMiQ8D761w
+2024-10-26 22:52:48,048 - __main__ - INFO - [api.py:298] - Iniciando servidor na porta 5000 em modo production
