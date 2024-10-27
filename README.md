@@ -160,17 +160,35 @@ Each line of the file should contain a set of credentials in the specified forma
 
 ---
 
-## 📄 Credits
+## 📡 API Integration
 
-- **Creator**: [lalaio1](https://github.com/lalaio1)
+The **wp-checker** now includes a powerful API that allows for seamless integration and automated checking of WordPress credentials. This API enhances the functionality of the main tool by enabling developers to incorporate credential verification into their applications.
 
-## 📝 License
+### 🚀 Features of the API
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+- **Health Check**: Check the status of the API.
+- **Credential Verification**: POST requests to verify WordPress credentials.
+- **Rate Limiting**: Protects the API from excessive requests.
+- **Customizable Parameters**: Specify options such as output format and threading directly in your requests.
 
-## 💬 Contact
+### 🌐 API Documentation
 
-For questions or support, please reach out to 
-discord: [lalaio1]
-github: lalaio1
----
+For detailed API usage and examples, please visit the API documentation:
+
+[API Documentation](https://github.com/lalaio1/wp-checker/tree/main/api)
+
+### 💡 Quick Start
+
+To run the API server, follow these steps:
+
+1. Navigate to the `api` directory:
+    ```bash
+    cd wp-checker/api
+    ```
+2. Start the API server:
+    ```bash
+    python api.py
+    ```
+
+You can then send requests to the API at `http://localhost:5000/check` (or the configured port).
+
