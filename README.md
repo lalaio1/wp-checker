@@ -124,12 +124,16 @@ python wp-checker.py path/to/your/file -v valid_file -i invalid_file -off offlin
 | `-i`, `--invalid` | File to save invalid credentials             | None        |
 | `-off`, `--offline` | File to save offline sites                  | None        |
 | `-s`, `--skip-ping` | Skip ping check                             | False       |
+| `-cwv`, `--check-wp-version` | Check the WordPress version for each site        | False       |
 | `-t`, `--threads` | Number of threads to use                     | 10          |
 | `-o`, `--output`  | Output file for the full report              | report      |
 | `-f`, `--format`  | Output format for the report                 | csv         |
 | `-d`, `--delay`   | Delay between requests in seconds            | 0           |
 
+
 ---
+
+
 
 ## 📋 File Format
 
