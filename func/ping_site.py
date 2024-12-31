@@ -1,9 +1,13 @@
-from requests.exceptions import RequestException
-import requests
+import socket
+from urllib.parse import urlparse
 
 def ping_site(site_url, timeout=4):
+    parsed_url = urlparse(site_url)
+    host = parsed_url.netloc
+    port = 443 if parsed_url.scheme == 'https' else 80  
+
     try:
-        response = requests.head(site_url, timeout=timeout, allow_redirects=False)
-        return response.status_code == 200
-    except RequestException:
+        with socket.create_connection((host, port), timeout=timeout):
+            return True
+    except (socket.timeout, socket.error):
         return False
