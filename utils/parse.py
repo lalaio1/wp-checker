@@ -51,6 +51,8 @@ _BLOCK_KEYS = {
 }
 # Keys that belong to block files but are not credentials - ignored on purpose.
 _IGNORED_BLOCK_KEYS = {
+    "url login",
+    "login url",
     "status",
     "wp version",
     "wp_version",
