@@ -1,0 +1,1 @@
+"""wp-checker logging helpers."""

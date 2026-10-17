@@ -1,9 +1,17 @@
-avro==1.12.0
-beautifulsoup4==4.12.3
-pyarrow==17.0.0
-PyYAML==6.0.2
-Requests==2.32.3
-tqdm==4.66.5
-pystyle
-alive_progress
-aiofiles 
+# --------------------------------------------------------------------------- #
+# wp-checker - required dependencies
+# --------------------------------------------------------------------------- #
+requests>=2.31.0          # HTTP engine (sessions, retries, proxies)
+beautifulsoup4>=4.12.0    # wp-admin parsing: role, display name, capability menus
+PyYAML>=6.0               # YAML reports (read + write)
+
+# --------------------------------------------------------------------------- #
+# recommended - the tool degrades gracefully when these are missing
+# --------------------------------------------------------------------------- #
+psutil>=5.9.0             # --auto-threads CPU/RAM sampling (Linux falls back to /proc)
+PySocks>=1.7.1            # --tor and socks5:// / socks5h:// proxies
+
+# --------------------------------------------------------------------------- #
+# optional - only needed for one specific feature
+# --------------------------------------------------------------------------- #
+# pyarrow>=14.0           # -f parquet reports  (pip install pyarrow)

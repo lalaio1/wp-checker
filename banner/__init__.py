@@ -1,0 +1,1 @@
+"""wp-checker ASCII banner."""
