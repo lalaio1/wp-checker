@@ -1,9 +1,10 @@
 """Block oriented writer for ``-v/--valid``, ``-i/--invalid``, ``-off``, ``--blocked``.
 
 The layout matches what wp-checker has always produced (and what it can read
-back as input)::
+back as input): ``URL`` is the site base and ``URL Login`` the full login page::
 
     URL: https://example.com
+    URL Login: https://example.com/wp-login.php
     Username: admin
     Password: secret
     Status: Valid
@@ -44,8 +45,11 @@ class BlockWriter:
         self.count = 0
 
     def write(self, record: dict) -> None:
+        url = record.get("url", "") or ""
+        login_url = f"{url}/wp-login.php" if url else ""
         lines = [
-            f"URL: {record.get('url', '')}",
+            f"URL: {url}",
+            f"URL Login: {login_url}",
             f"Username: {record.get('username', '')}",
             f"Password: {record.get('password', '')}",
             f"Status: {record.get('status', '')}",
